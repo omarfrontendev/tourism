@@ -1,0 +1,31 @@
+.wedgets {
+  box-shadow: 4px 3px 40px rgb(16 33 34 / 6%);
+  .single {
+    flex: 1;
+    padding: 40px 20px;
+    svg {
+      fill: var(--mainColorGreen);
+      margin-bottom: 14px;
+      transition: 0.3s linear;
+      width: 50px;
+    }
+    span {
+      font-size: 36px;
+      color: #09100d;
+      font-family: "Merriweather", serif;
+      font-weight: 700;
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #5e5e5e;
+      margin-top: 4px;
+    }
+    &:hover {
+      svg {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

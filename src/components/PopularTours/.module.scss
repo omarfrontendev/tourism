@@ -1,0 +1,64 @@
+.tours__container {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: center;
+  .tour__box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 30px 25px;
+    box-shadow: 4px 3px 40px rgb(16 33 34 / 6%);
+    .icon {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 1px solid rgba(221, 221, 221, 0.521);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 25px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: rgba(236, 236, 236, 0.514);
+        transform: scale(0);
+        transition: 0.3s linear;
+      }
+      .tour__image {
+        width: 60%;
+      }
+    }
+    .tour__title {
+      margin-bottom: 0;
+    }
+    &:hover {
+      .icon {
+        border-color: transparent;
+        transition: 0.8s linear;
+        &::after {
+          animation: overlay 0.8s linear forwards;
+        }
+      }
+    }
+  }
+}
+@keyframes overlay {
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,47 @@
+.news__form {
+  background: linear-gradient(
+    152.97deg,
+    rgba(32, 42, 55, 0.4),
+    rgba(12, 25, 43, 0.2)
+  );
+  backdrop-filter: blur(50px);
+  border: 1px solid rgba(144, 185, 86, 0.33);
+  padding: 50px 30px;
+  max-width: 80%;
+  border-radius: 5px;
+  h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "Merriweather", serif;
+    margin-bottom: 15px;
+    line-height: 1.35;
+  }
+  p {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Work Sans", sans-serif;
+  }
+  input {
+    all: unset;
+    width: 100%;
+    background: transparent;
+    border: 1px solid hsla(0, 0%, 87%, 0.431);
+    height: 52px;
+    line-height: 52px;
+    // padding: 0 20px;
+    color: var(--white);
+    transition: all 0.4s ease;
+    margin-bottom: 25px;
+    &:first-of-type {
+      margin-top: 40px;
+    }
+    &::placeholder {
+      color: #fff;
+    }
+  }
+  button {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}

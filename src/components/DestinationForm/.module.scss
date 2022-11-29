@@ -1,0 +1,29 @@
+.destination__section {
+  padding: 16px 25px 16px 0;
+  box-shadow: 1px 1px 10px 8px rgb(0 0 0 / 4%);
+
+  .form__dest {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .boxes {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 0 25px;
+      .select__box {
+        border: none;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+        option {
+          padding: 10px;
+        }
+      }
+      &:not(:last-of-type) {
+        border-right: 1px solid #ddd;
+      }
+    }
+  }
+}

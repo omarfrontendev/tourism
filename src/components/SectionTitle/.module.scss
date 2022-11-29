@@ -1,0 +1,26 @@
+.section__title {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: var(--mainColorGreen);
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 2px;
+  }
+  .title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #09100d;
+    line-height: 1.5;
+    font-family: "Merriweather", serif;
+  }
+  .logo {
+    max-width: 370px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

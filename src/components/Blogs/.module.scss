@@ -1,0 +1,32 @@
+.blogs__container {
+  gap: 20px;
+  .blog {
+    box-shadow: 4px 3px 40px rgb(16 33 34 / 6%);
+    flex: 1;
+    .blog__image {
+      margin-bottom: 24px;
+      img {
+        width: 100%;
+      }
+      .blog__date {
+        bottom: 20px;
+        left: 20px;
+        padding: 8px 20px;
+        background-color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+    .blog__title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #09100d;
+      font-family: "Merriweather", serif;
+      line-height: 1.45;
+      margin-bottom: 20px;
+    }
+    button {
+      margin: 0 auto 0 0;
+    }
+  }
+}

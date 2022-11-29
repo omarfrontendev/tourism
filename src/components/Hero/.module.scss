@@ -1,0 +1,38 @@
+.hero__section {
+  height: calc(100vh - 69px);
+  overflow: hidden;
+  .hero__img {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 340px;
+    &.right__img {
+      right: 40px;
+    }
+    &.left__img {
+      left: 80px;
+      width: 220px;
+      animation: updown 1.6s linear infinite alternate;
+    }
+    &.plane {
+      width: 100px;
+      transform: translate(0);
+      left: 0;
+      top: 20px;
+      animation: fly 15s 1s linear infinite;
+      opacity: 0.5;
+    }
+  }
+}
+@keyframes updown {
+  to {
+    transform: translateY(calc(-50% + 30px));
+  }
+}
+@keyframes fly {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(110vw);
+  }
+}

@@ -1,0 +1,25 @@
+.socials {
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  row-gap: 20px;
+  .link {
+    border: 1px solid var(--mainColorGreen);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    a {
+      display: block;
+      width: 25px;
+      height: 25px;
+      transition: 0.3s ease-in-out;
+      color: var(--mainColorGreen);
+      font-size: 16px;
+    }
+    &:hover {
+      background-color: var(--mainColorGreen);
+      a {
+        color: #fff;
+      }
+    }
+  }
+}

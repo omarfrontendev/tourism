@@ -1,0 +1,28 @@
+.hero__text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .hero__subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: var(--mainColorGreen);
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 2px;
+  }
+  .hero__title {
+    font-size: 3.4rem;
+    font-weight: 900;
+    color: #09100d;
+    line-height: 1.5;
+    font-family: "Merriweather", serif;
+  }
+  .hero__desc {
+    color: #5e5e5e;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-weight: 500;
+    font-family: "Work Sans", sans-serif;
+  }
+}

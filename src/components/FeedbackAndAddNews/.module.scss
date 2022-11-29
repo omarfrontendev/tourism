@@ -1,0 +1,29 @@
+.section {
+  display: flex;
+  min-height: 90vh;
+  .feedback,
+  .add__news {
+    padding: 40px 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .feedback {
+    background-color: #09100d;
+    position: relative;
+    width: 57%;
+    > img {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      width: 230px;
+    }
+  }
+  .add__news {
+    background-color: blue;
+    width: 43%;
+    background-image: url(https://astrip-react.vercel.app/_next/static/media/newsletter-bg.097ce13b.png);
+    padding: 20px;
+  }
+}

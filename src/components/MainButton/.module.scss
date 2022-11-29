@@ -1,0 +1,56 @@
+.main__button {
+  all: unset;
+  cursor: pointer;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: var(--mainColorGreen);
+  margin: 0 auto;
+  padding: 0 34px;
+  transition: 0.6s ease-in-out;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background-color: #fff;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.6s ease-in-out;
+  }
+  .button__content {
+    z-index: 1;
+    position: relative;
+  }
+  &:hover {
+    color: var(--mainColorGreen);
+    &::after {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  &.outline {
+    background-color: #fff;
+    border: 2px solid var(--mainColorGreen);
+    color: var(--mainColorGreen);
+    &::after {
+      background-color: var(--mainColorGreen);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+}

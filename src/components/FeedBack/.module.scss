@@ -1,0 +1,62 @@
+.feedback {
+  width: 100%;
+  padding: 40px 60px;
+  .review__details {
+    .review__rating {
+      padding: 35px 25px;
+      border: 1px solid hsla(0, 8%, 97%, 0.16);
+      margin-bottom: 50px;
+      position: relative;
+      .stars {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        font-size: 20px;
+        color: var(--mainColorGreen);
+        margin-bottom: 20px;
+      }
+      .review {
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: #fff;
+        font-family: "Work Sans", sans-serif;
+        margin-bottom: 0;
+      }
+    }
+    .person__details {
+      padding-left: 50px;
+      .person__img {
+        position: relative;
+        display: block;
+        margin-right: 24px;
+        width: 60px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: calc(-100% - 16px);
+          left: 50%;
+          transform: translateX(-50%) rotate(45deg);
+          width: 50px;
+          height: 50px;
+          border-right: 1px solid hsla(0, 8%, 97%, 0.16);
+          border-bottom: 1px solid hsla(0, 8%, 97%, 0.16);
+          background-color: #09100d;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .name {
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: "Merriweather", serif;
+      }
+      .country {
+        font-size: 16px;
+        font-weight: 400;
+        color: #cbcbcb;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
